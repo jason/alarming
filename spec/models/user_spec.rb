@@ -34,7 +34,6 @@ describe User do
     it "should be valid" do
 
       addresses = %w[user@foo.COM A_US-ER@f.b.org frst.lst@foo.jp a+b@baz.cn]
-      p addresses
       addresses.each do | valid_address |
         user.email = valid_address
         # how to figure out what the error is
