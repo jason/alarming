@@ -1,0 +1,13 @@
+= provide :title, "Sign Up"
+.row
+  .ten.columns
+    h1 = yield(:title)
+
+    = form_for(@user) do |f|
+      = f.label :email
+      = f.text_field :email
+      br
+      = f.label :phone_number
+      = f.text_field :phone_number
+      = f.submit
+
